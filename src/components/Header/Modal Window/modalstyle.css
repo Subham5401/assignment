@@ -1,0 +1,86 @@
+/* Background */
+.modal-bg {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close {
+  border-radius: 50%;
+  background-color: #ffff;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.modal {
+  height: 100%;
+  background-color: #ffff;
+  padding-top: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modal .login {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.login .login-text {
+  padding-left: 1rem;
+  color: rgb(230, 68, 47);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.modal .border {
+  margin: 1rem 0 0 1.5rem;
+  width: 20rem;
+  border-top: 1px solid gray;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.content ul {
+  list-style-type: none;
+  padding-inline-start: 1rem;
+}
+
+.content li {
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: 450;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(49, 49, 49);
+}
+
+.modal .heading {
+  display: flex;
+  padding-left: 1.5rem;
+  font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  .modal {
+    width: 25vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .modal {
+    width: 35vw;
+  }
+}
