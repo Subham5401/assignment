@@ -37,4 +37,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Misc
 
-I have used stylesheet for each component, although I usually prefer styled components but to keep things lil simple I went for stylesheets.
+I have used stylesheet for each component, although I usually prefer styled components but to keep things little simpler I went for stylesheets.
