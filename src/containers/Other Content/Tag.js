@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './contentstyle.css';
 
-export default function Content() {
+export default function Tag() {
   const [data, setData] = useState();
 
   const getData = async () => {
     try {
       const res = await axios.get(
-        'https://api.acharyaprashant.org/v2/legacy/courses/series/optuser/course-series-eeb9d3'
+        'https://api.acharyaprashant.org/v2/legacy/courses/tags'
       );
       setData(res.data);
     } catch (e) {
@@ -22,9 +21,6 @@ export default function Content() {
 
   return (
     <div>
-      <div>
-        <div>{data && <div className='title'></div>}</div>
-      </div>
       <div></div>
     </div>
   );

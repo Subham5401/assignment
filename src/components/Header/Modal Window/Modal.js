@@ -1,7 +1,5 @@
 import React from 'react';
 import './modalstyle.css';
-import close from '../../../assets/close.svg';
-import avatar from '../../../assets/avatar.svg';
 import content from './modalContent.json';
 
 export default function Modal(props) {
@@ -12,14 +10,14 @@ export default function Modal(props) {
   return (
     <div className='modal-bg'>
       <div className='close' onClick={closeModal}>
-        <img src={close} alt='close-icon' />
+        <img src='close.svg' alt='close-icon' />
       </div>
       <div>
         <div className='modal'>
           <div>
             <div className='login'>
               <div>
-                <img src={avatar} alt='avatar' />
+                <img src='avatar.svg' alt='avatar' />
               </div>
               <div>
                 <span className='login-text'>Login</span>

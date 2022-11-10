@@ -8,9 +8,9 @@ export default function ModalTiny(props) {
   };
 
   return (
-    <div className='modal tiny'>
-      <div className='modal header'>
-        <div>
+    <div className='tiny-modal'>
+      <div className='head'>
+        <div className='head-logo'>
           <img
             src='aplogo.png'
             alt='logo'
@@ -37,7 +37,7 @@ export default function ModalTiny(props) {
         </div>
         <br />
         <div>
-          <div className='heading'>
+          <div className='tiny-modal-heading'>
             <span>More</span>
           </div>
           <div className='content'>
@@ -53,7 +53,7 @@ export default function ModalTiny(props) {
         </div>
         <br />
         <div>
-          <div className='heading'>
+          <div className='tiny-modal-heading'>
             <span>Explore Categories</span>
           </div>
           <div className='content'>

@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './contentstyle.css';
+import './faqstyle.css';
 
-export default function Content() {
+export default function Faq() {
   const [data, setData] = useState();
-
   const getData = async () => {
     try {
       const res = await axios.get(
-        'https://api.acharyaprashant.org/v2/legacy/courses/series/optuser/course-series-eeb9d3'
+        'https://api.acharyaprashant.org/v2/legacy/courses/faqs?language=english'
       );
-      setData(res.data);
     } catch (e) {
       console.error(e.message);
     }
@@ -22,9 +20,6 @@ export default function Content() {
 
   return (
     <div>
-      <div>
-        <div>{data && <div className='title'></div>}</div>
-      </div>
       <div></div>
     </div>
   );

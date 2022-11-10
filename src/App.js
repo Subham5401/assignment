@@ -4,8 +4,10 @@ import Header from './components/Header/Header';
 import Modal from './components/Header/Modal Window/Modal';
 import ModalTiny from './components/Header/Modal Window/ModalTiny';
 import Content from './containers/Main Content/Content';
+import Tag from './containers/Other Content/Tag';
+import Faq from './containers/FAQ/Faq';
 
-function App() {
+export default function App() {
   const [openMenu, setOpenMenu] = useState(false);
   const [smallScreen, setSmallScreen] = useState(false);
 
@@ -19,19 +21,32 @@ function App() {
 
   return (
     <div className='App'>
-      <Header setOpenMenu={setOpenMenu} />
-      <Content />
-      {openMenu ? (
-        !smallScreen ? (
-          <Modal setOpenMenu={setOpenMenu} />
+      <div>
+        <Header setOpenMenu={setOpenMenu} />
+      </div>
+      <div>
+        <Content />
+      </div>
+      <div>
+        <Tag />
+      </div>
+      <div>
+        <Faq />
+      </div>
+      <div>
+        <Footer />
+      </div>
+      <div>
+        {openMenu ? (
+          !smallScreen ? (
+            <Modal setOpenMenu={setOpenMenu} />
+          ) : (
+            <ModalTiny setOpenMenu={setOpenMenu} />
+          )
         ) : (
-          <ModalTiny setOpenMenu={setOpenMenu} />
-        )
-      ) : (
-        ''
-      )}
+          ''
+        )}
+      </div>
     </div>
   );
 }
-
-export default App;

@@ -1,17 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './headerstyle.css';
-import aplogo from '../../assets/aplogo.png';
-import contact from '../../assets/contact.svg';
-import hamburger from '../../assets/hamburger.svg';
-import lang from '../../assets/lang.svg';
-import downArrow from '../../assets/downarrow.svg';
 
 export default function Header(props) {
   return (
     <div className='header'>
       <div className='leftbar'>
         <div className='leftbar-item'>
-          <img className='logo' src={aplogo} alt='AcharyPrashant' />
+          <img className='logo' src='/aplogo.png' alt='AcharyPrashant' />
         </div>
         <div className='leftbar-item'>
           <a
@@ -53,8 +48,12 @@ export default function Header(props) {
       <div className='rightbar'>
         <div className='rightbar-item'>
           <div className='icon'>
-            <img src={lang} alt='Language' style={{ paddingRight: '0.3rem' }} />
-            <img src={downArrow} alt='select' />
+            <img
+              src='/lang.svg'
+              alt='Language'
+              style={{ paddingRight: '0.3rem' }}
+            />
+            <img src='/downarrow.svg' alt='select' />
           </div>
         </div>
         <div className='rightbar-item'>
@@ -63,7 +62,7 @@ export default function Header(props) {
             target='_blank'
             rel='noreferrer'
           >
-            <img className='icon' src={contact} alt='contact' />
+            <img className='icon' src='/contact.svg' alt='contact' />
           </a>
         </div>
         <div className='rightbar-item'>
@@ -79,7 +78,7 @@ export default function Header(props) {
         <div className='rightbar-item'>
           <div className='icon' onClick={() => props.setOpenMenu(true)}>
             <img
-              src={hamburger}
+              src='/hamburger.svg'
               alt='menu'
               style={{ paddingRight: '0.5rem' }}
             />

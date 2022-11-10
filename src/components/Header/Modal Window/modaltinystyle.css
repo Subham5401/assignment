@@ -1,3 +1,25 @@
-.tiny {
+.tiny-modal {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  position: relative;
   border-radius: 10px;
+  height: 18rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow-y: auto;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head .head-logo {
+  display: flex;
+  align-items: center;
+}
+
+.tiny-modal-heading {
+  font-weight: 500;
+  margin-left: 1.5rem;
 }

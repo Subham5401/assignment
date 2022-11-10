@@ -1,0 +1,96 @@
+.footer {
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  box-sizing: border-box;
+  z-index: auto;
+  background-color: rgb(15 23 42 / 1);
+  color: #ffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.head {
+  font-weight: 600;
+}
+
+.connect {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  color: #ffff;
+}
+
+.label {
+  width: 8rem;
+  border: 2px solid #ffff;
+  border-radius: 8px;
+}
+
+.footer-item {
+  padding-bottom: 1rem;
+}
+
+.footer-item:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.aplogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aplogo img {
+  width: 2rem;
+  height: 2rem;
+  padding-right: 0.5rem;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.footer-contact a:hover {
+  color: red;
+}
+
+.footer-contact img {
+  padding-right: 0.5rem;
+}
+
+.footer-contact a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.contact-form {
+  border: 1px solid #ffff;
+  padding: 0.3rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form:hover {
+  border: 1px solid red;
+  color: red;
+}
+
+.sub-head {
+  padding-bottom: 0.5rem;
+}
